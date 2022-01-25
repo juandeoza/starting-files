@@ -1,0 +1,135 @@
+body,
+button,
+input,
+textarea {
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Asap' , sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+body {
+    background-color: #ededed;
+    margin: 0;
+    font-family: 'Asap' ,sans-serif;
+}
+img {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+}
+
+.site-header {
+    display: flex;
+    flex-flow: column;
+    background-color: black;
+    height: 25vh;
+    justify-content: center;
+    
+}
+.site-info {
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.site-title {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.site-description {
+    text-align: center;
+    color: #f6d200;
+    font-size: 1.2em;
+    margin-top: -20px;
+    font-style: italic;
+}
+.main-menu {
+    padding: .2em;
+    color: black;
+    background-color: #f6d200;
+    text-align: center;
+}
+footer {
+    background-color: black;
+    height: 7vh;
+    margin: 0;
+}
+.sidebar-right {
+    background-color: blue;
+    color: white;
+    margin: 0;
+}
+h1 {
+    color: red;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.content-area {
+    min-height: 70vh;
+    /* margin-top: 1.5em; */
+}
+.main-content-area {
+padding: 2em;    
+}
+.post {
+    background-color: white;
+    margin-bottom: 1em;
+}
+.post a {
+    color: black;
+    text-decoration: none;
+}
+.post-content {
+    padding: 0 40px 20px;
+}
+.post-content h2 {
+    background-color: #f6d200;
+    padding: 5px;
+    text-align: center;
+    margin: 0 -40px 30px;
+}
+
+
+
+@media screen and (min-width: 810px) {
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.post {
+    flex-basis: 49%;
+}
+.post-full {
+    flex-basis: 100%;
+}
+}
+
+@media screen and (min-width: 1120px) {
+    .content-area {
+        display: flex;
+        min-height: 68vh;
+    }
+    .main-content-area {
+        flex: 1 1 auto;
+    }
+    .sidebar-right {
+        flex: 0 0 320px;
+    }
+    .main-menu {
+        font-size: 1.5em;
+    }
+    .post-one-third {
+        flex-basis: 33%;
+    }
+    
+}
